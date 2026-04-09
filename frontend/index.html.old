@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geraldo Alves | Arquiteto de Soluções TI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .form-message { margin-top: 1rem; padding: 0.75rem; border-radius: 8px; display: none; }
+        .form-message.success { background: #10b981; color: white; display: block; }
+        .form-message.error { background: #ef4444; color: white; display: block; }
+        .form-message.whatsapp { background: #25d366; color: white; display: block; }
+        .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+        .loading { display: inline-block; width: 16px; height: 16px; border: 2px solid #fff; border-radius: 50%; border-top-color: transparent; animation: spin 0.6s linear infinite; margin-right: 8px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511920816426" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Fale comigo no WhatsApp!</span>
+    </a>
+
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">GA<span class="gradient">Tech</span></div>
+            <ul class="nav-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <button class="btn-whatsapp-mobile" onclick="window.open('https://wa.me/5511920816426', '_blank')">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="certification-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>AWS Cloud Practitioner Certificado</span>
+                </div>
+                <h1>Infraestrutura que sustenta.<br><span class="gradient-text">Arquitetura que escala.</span></h1>
+                <p class="hero-description">+10 anos de experiência em Gestão de TI, Cloud Computing, Suporte Técnico, Montagem de PC Gamer e Desenvolvimento de soluções com Docker, Kubernetes e CI/CD.</p>
+                <div class="hero-stats">
+                    <div class="stat-item"><div class="stat-value">150+</div><div class="stat-label">Projetos entregues</div></div>
+                    <div class="stat-item"><div class="stat-value">99.9%</div><div class="stat-label">Uptime garantido</div></div>
+                    <div class="stat-item"><div class="stat-value">10+</div><div class="stat-label">Anos de experiência</div></div>
+                    <div class="stat-item"><div class="stat-value">100+</div><div class="stat-label">Clientes ativos</div></div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Solicitar Proposta</button>
+                    <button class="btn-secondary" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })">Ver Serviços <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Serviços Especializados</h2>
+                <div class="services-grid">
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-cloud-upload-alt"></i></div><h3>Arquitetura Cloud</h3><p>AWS, Azure, migração, otimização de custos e alta disponibilidade.</p><div class="tech-stack"><span>AWS</span><span>Azure</span><span>Terraform</span></div></div>
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-gamepad"></i></div><h3>PC Gamer</h3><p>Montagem, manutenção e upgrade de computadores gamers de alto desempenho.</p><div class="tech-stack"><span>Montagem</span><span>Upgrade</span><span>Otimização</span></div></div>
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-building"></i></div><h3>Gestão de TI</h3><p>ITIL, COBIT, BPMN 2.0, governança de TI e gestão de mudanças.</p><div class="tech-stack"><span>ITIL</span><span>COBIT</span><span>BPMN</span></div></div>
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-headset"></i></div><h3>Suporte Técnico</h3><p>Suporte remoto e presencial, manutenção de computadores, redes e servidores.</p><div class="tech-stack"><span>24/7</span><span>Remoto</span><span>Presencial</span></div></div>
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-chalkboard-user"></i></div><h3>Treinamentos TI</h3><p>Docker, Kubernetes, DevOps, AWS, Terraform - In-Company ou online.</p><div class="tech-stack"><span>Docker</span><span>K8s</span><span>DevOps</span></div></div>
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-microchip"></i></div><h3>DevOps & Containers</h3><p>CI/CD, GitHub Actions, pipelines automatizados e microsserviços.</p><div class="tech-stack"><span>CI/CD</span><span>Docker</span><span>K8s</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">Portfólio de Projetos</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Basic Dockerfile</h3><p>Criação de imagens Docker otimizadas.</p><div class="tech-tags"><span>Docker</span></div></div>
+                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Multi-Container App</h3><p>Docker Compose + Node.js + MongoDB.</p><div class="tech-tags"><span>Docker</span><span>Node.js</span></div></div>
+                    <div class="portfolio-card"><span class="badge advanced">Avançado</span><h3>Multi-Service App</h3><p>Microsserviços com API Gateway.</p><div class="tech-tags"><span>Microsserviços</span></div></div>
+                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Node.js Deployment</h3><p>Deploy com GitHub Actions.</p><div class="tech-tags"><span>GitHub Actions</span></div></div>
+                    <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Single-Page CV</h3><p>Currículo HTML responsivo.</p><div class="tech-tags"><span>HTML5</span><span>CSS3</span></div></div>
+                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Weather Web App</h3><p>App de clima com API.</p><div class="tech-tags"><span>API</span><span>JavaScript</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="cases">
+            <div class="container">
+                <h2 class="section-title">Cases de Sucesso</h2>
+                <div class="cases-grid">
+                    <div class="case-card"><div class="case-header"><h3>Migração Cloud AWS</h3><p class="case-subtitle">E-commerce Nacional</p></div><p class="case-description">Migração para AWS com redução de 40% nos custos e 99.99% de uptime.</p><div class="case-results"><div class="result-badge"><i class="fas fa-check-circle"></i><span>40% economia</span></div></div></div>
+                    <div class="case-card"><div class="case-header"><h3>Automação CI/CD</h3><p class="case-subtitle">Empresa de Tecnologia</p></div><p class="case-description">Pipelines com GitHub Actions reduzindo tempo de deploy em 80%.</p><div class="case-results"><div class="result-badge"><i class="fas fa-check-circle"></i><span>80% mais rápido</span></div></div></div>
+                    <div class="case-card"><div class="case-header"><h3>PC Gamer High-End</h3><p class="case-subtitle">Streamer/Editor de Vídeo</p></div><p class="case-description">Montagem de workstation para edição 4K e streaming.</p><div class="case-results"><div class="result-badge"><i class="fas fa-check-circle"></i><span>Performance máxima</span></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2>SOLICITE SUA PROPOSTA</h2>
+                        <h3>Vamos construir algo incrível juntos</h3>
+                        <p>Preencha o formulário com seus dados e necessidades. Sua mensagem será enviada diretamente para meu WhatsApp com todos os dados preenchidos.</p>
+                        <button class="btn-whatsapp" onclick="window.open('https://wa.me/5511920816426', '_blank')">
+                            <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                        </button>
+                        <div class="contact-details">
+                            <div class="detail-item"><i class="fas fa-map-marker-alt"></i><span>São Paulo, SP — Cotia</span></div>
+                            <div class="detail-item"><i class="fas fa-phone"></i><span>(11) 9 2081-6426</span></div>
+                            <div class="detail-item"><i class="fas fa-envelope"></i><span>geraldodevops@gmail.com</span></div>
+                            <div class="detail-item"><i class="fas fa-clock"></i><span>Seg-Sex 9h-18h | Suporte 24/7</span></div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <h3>Solicitar Proposta Gratuita</h3>
+                        <div class="form-row">
+                            <div class="form-group"><input type="text" id="nome" placeholder="Nome completo *" required></div>
+                            <div class="form-group"><input type="email" id="email" placeholder="E-mail *" required></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group"><input type="text" id="empresa" placeholder="Empresa (opcional)"></div>
+                            <div class="form-group"><input type="tel" id="telefone" placeholder="Telefone (opcional)"></div>
+                        </div>
+                        <div class="form-group">
+                            <select id="servico" required>
+                                <option value="">Selecione o tipo de proposta</option>
+                                <option value="☁️ ARQUITETURA CLOUD">☁️ Arquitetura Cloud / Microsserviços</option>
+                                <option value="🎮 PC GAMER">🎮 PC Gamer - Montagem/Manutenção</option>
+                                <option value="🏢 GESTÃO DE TI">🏢 Gestão de TI / Governança</option>
+                                <option value="🖥️ SUPORTE TÉCNICO">🖥️ Suporte Técnico</option>
+                                <option value="📚 TREINAMENTOS">📚 Treinamentos em TI</option>
+                                <option value="🐳 DEVOPS">🐳 DevOps & Containers</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensagem" rows="5" placeholder="Descreva sua necessidade ou projeto..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit" id="submitBtn">
+                            <i class="fab fa-whatsapp"></i> Enviar pelo WhatsApp
+                        </button>
+                        <div id="formStatus" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section"><div class="footer-logo">GA<span class="gradient">Tech</span></div><p>Infraestrutura que sustenta. Arquitetura que escala.</p></div>
+                <div class="footer-section"><h4>LINKS</h4><ul><li><a href="#home">Início</a></li><li><a href="#services">Serviços</a></li><li><a href="#portfolio">Portfólio</a></li><li><a href="#contact">Contato</a></li></ul></div>
+                <div class="footer-section"><h4>CERTIFICAÇÕES</h4><ul><li>AWS Cloud Practitioner</li><li>DevOps Essentials</li><li>Terraform Cloud AWS</li><li>Linux Foundation LFC112</li></ul></div>
+                <div class="footer-section"><h4>CONTATO</h4><ul><li>São Paulo, SP — Cotia</li><li>(11) 9 2081-6426</li><li>geraldodevops@gmail.com</li></ul><button class="footer-whatsapp" onclick="window.open('https://wa.me/5511920816426', '_blank')"><i class="fab fa-whatsapp"></i> WhatsApp</button></div>
+            </div>
+            <div class="footer-bottom"><p>© 2025 Geraldo Alves - Arquiteto de Soluções Sênior. Todos os direitos reservados.</p></div>
+        </div>
+    </footer>
+
+    <script>
+        const form = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const formStatus = document.getElementById('formStatus');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const empresa = document.getElementById('empresa').value;
+            const telefone = document.getElementById('telefone').value;
+            const servico = document.getElementById('servico').value;
+            const mensagem = document.getElementById('mensagem').value;
+
+            if (!nome || !email || !mensagem || !servico) {
+                formStatus.className = 'form-message error';
+                formStatus.innerHTML = '⚠️ Preencha todos os campos obrigatórios!';
+                formStatus.style.display = 'block';
+                setTimeout(() => { formStatus.style.display = 'none'; }, 3000);
+                return;
+            }
+
+            // Construir mensagem formatada para WhatsApp
+            let whatsappMsg = "*🆕 NOVA SOLICITAÇÃO DE PROPOSTA*%0A%0A";
+            whatsappMsg += `*👤 Nome:* ${nome}%0A`;
+            whatsappMsg += `*📧 E-mail:* ${email}%0A`;
+            if (telefone) whatsappMsg += `*📱 Telefone:* ${telefone}%0A`;
+            if (empresa) whatsappMsg += `*🏢 Empresa:* ${empresa}%0A`;
+            whatsappMsg += `*🎯 Serviço:* ${servico}%0A`;
+            whatsappMsg += `*📝 Mensagem:*%0A${mensagem}%0A%0A`;
+            whatsappMsg += `---%0A`;
+            whatsappMsg += `*Enviado via Site Pessoal*%0A`;
+            whatsappMsg += `*Data:* ${new Date().toLocaleString('pt-BR')}`;
+
+            // Número do WhatsApp (apenas números)
+            const whatsappNumber = "5511920816426";
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMsg}`;
+
+            // Mostrar loading
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="loading"></span> Redirecionando...';
+            formStatus.className = 'form-message whatsapp';
+            formStatus.innerHTML = '📱 Redirecionando para o WhatsApp...';
+            formStatus.style.display = 'block';
+
+            // Abrir WhatsApp e limpar formulário
+            setTimeout(() => {
+                window.open(whatsappUrl, '_blank');
+                form.reset();
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fab fa-whatsapp"></i> Enviar pelo WhatsApp';
+                formStatus.innerHTML = '✅ Mensagem preparada! Agora é só enviar no WhatsApp.';
+                
+                setTimeout(() => {
+                    formStatus.style.display = 'none';
+                }, 5000);
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

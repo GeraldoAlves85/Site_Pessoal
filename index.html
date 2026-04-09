@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geraldo Alves | Arquiteto de Soluções TI - 100+ Certificações + 60+ Labs AWS</title>
-    <meta name="description" content="Portfólio profissional de Geraldo Alves - Arquiteto de Soluções TI com 100+ certificações, 60+ laboratórios AWS e 40+ projetos técnicos">
+    <title>Geraldo Alves | Arquiteto de Soluções TI - 100+ Certificações AWS, 4Linux, CompTIA</title>
+    <meta name="description" content="Portfólio profissional de Geraldo Alves - Arquiteto de Soluções TI com certificações AWS, 4Linux, CompTIA, Linux Foundation, Cisco e 60+ laboratórios práticos">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -53,12 +53,12 @@
         
         .cert-category { margin-bottom: 3rem; }
         .cert-category h3 { font-size: 1.5rem; margin-bottom: 1.5rem; color: #667eea; border-left: 4px solid #667eea; padding-left: 1rem; }
-        .cert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; }
+        .cert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 1rem; }
         .cert-card { background: rgba(255,255,255,0.05); border-radius: 12px; padding: 1rem; display: flex; align-items: center; gap: 1rem; transition: all 0.3s; }
         .cert-card:hover { background: rgba(102,126,234,0.15); transform: translateX(5px); }
-        .cert-card i { font-size: 1.5rem; color: #667eea; }
+        .cert-card i { font-size: 1.5rem; color: #667eea; width: 35px; }
         .cert-card strong { display: block; font-size: 0.95rem; margin-bottom: 0.25rem; }
-        .cert-card span { font-size: 0.8rem; color: #a0a0b0; }
+        .cert-card span { font-size: 0.75rem; color: #a0a0b0; }
         
         .portfolio-level-section { margin-bottom: 3rem; }
         .level-title { font-size: 1.5rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem; }
@@ -139,8 +139,8 @@
                 <div class="stat-item"><div class="stat-value">60+</div><div class="stat-label">Labs AWS</div></div>
             </div>
             <div>
-                <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"> Solicitar Proposta</button>
-                <button class="btn-secondary" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})"> Ver Projetos</button>
+                <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">📋 Solicitar Proposta</button>
+                <button class="btn-secondary" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">📁 Ver Projetos</button>
             </div>
         </div>
     </section>
@@ -165,26 +165,72 @@
             <h2 class="section-title">Certificações e Formações</h2>
             <p class="section-subtitle">100+ certificações internacionais em Cloud, DevOps, Segurança, Redes</p>
 
-            <div class="cert-category"><h3><i class="fab fa-aws"></i> Amazon Web Services</h3>
+            <!-- CloudFaster Academy -->
+            <div class="cert-category">
+                <h3><i class="fas fa-cloud"></i> CloudFaster Academy</h3>
                 <div class="cert-grid">
-                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>AWS Certified Cloud Practitioner</strong><span>Amazon Web Services</span></div></div>
-                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>AWS re/Start Graduate</strong><span>Amazon Web Services</span></div></div>
-                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>Well-Architected Proficient</strong><span>Amazon Web Services</span></div></div>
-                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>AWS Cloud Quest: Solutions Architect</strong><span>Amazon Web Services</span></div></div>
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>Método ADVC - Arquiteto de Valor Cloud AWS</strong><span>CloudFaster Academy</span></div></div>
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>Cloud Security Engineer</strong><span>CloudFaster Academy</span></div></div>
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>Security Engineering on AWS</strong><span>CloudFaster Academy - Instrutor Dan Rezende - 15h</span></div></div>
                 </div>
             </div>
 
-            <div class="cert-category"><h3><i class="fas fa-certificate"></i> CompTIA</h3>
+            <!-- 4Linux -->
+            <div class="cert-category">
+                <h3><i class="fab fa-linux"></i> 4Linux</h3>
+                <div class="cert-grid">
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>DevOps Essentials</strong><span>4Linux</span></div></div>
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>Auditoria de Logs</strong><span>4Linux</span></div></div>
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>Infraestrutura Ágil com Práticas DevOps</strong><span>4Linux</span></div></div>
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>Especialista em Provisionamento de Infraestrutura com Terraform Cloud AWS</strong><span>4Linux</span></div></div>
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>Linux Network Engineer</strong><span>4Linux</span></div></div>
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>Linux System Administrator</strong><span>4Linux</span></div></div>
+                </div>
+            </div>
+
+            <!-- AWS -->
+            <div class="cert-category">
+                <h3><i class="fab fa-aws"></i> Amazon Web Services</h3>
+                <div class="cert-grid">
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>AWS Certified Cloud Practitioner</strong><span>Amazon Web Services</span></div></div>
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>AWS Cloud Quest: Solutions Architect</strong><span>Amazon Web Services</span></div></div>
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>AWS re/Start Graduate</strong><span>Amazon Web Services</span></div></div>
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>Well-Architected Proficient</strong><span>Amazon Web Services</span></div></div>
+                </div>
+            </div>
+
+            <!-- CompTIA -->
+            <div class="cert-category">
+                <h3><i class="fas fa-certificate"></i> CompTIA</h3>
                 <div class="cert-grid">
                     <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>CompTIA Network+</strong><span>CompTIA</span></div></div>
                     <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>CompTIA Security+</strong><span>CompTIA</span></div></div>
                     <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>CompTIA Linux+</strong><span>CompTIA</span></div></div>
                     <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>CompTIA Cloud+</strong><span>CompTIA</span></div></div>
-                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>TestOut Network Pro®</strong><span>TestOut</span></div></div>
                 </div>
             </div>
 
-            <div class="cert-category"><h3><i class="fab fa-linux"></i> Linux Foundation</h3>
+            <!-- TestOut -->
+            <div class="cert-category">
+                <h3><i class="fas fa-network-wired"></i> TestOut</h3>
+                <div class="cert-grid">
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>TestOut Network Pro®</strong><span>TestOut Continuing Education</span></div></div>
+                </div>
+            </div>
+
+            <!-- Cisco -->
+            <div class="cert-category">
+                <h3><i class="fas fa-network-wired"></i> Cisco</h3>
+                <div class="cert-grid">
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>CCNA</strong><span>Cisco</span></div></div>
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>Network Technician Career Path</strong><span>Cisco</span></div></div>
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>Introduction to Cybersecurity</strong><span>Cisco</span></div></div>
+                </div>
+            </div>
+
+            <!-- Linux Foundation -->
+            <div class="cert-category">
+                <h3><i class="fab fa-linux"></i> Linux Foundation</h3>
                 <div class="cert-grid">
                     <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>LFC112: Creating Effective Documentation</strong><span>The Linux Foundation</span></div></div>
                     <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>LFEL1004: Authentication & Authorization</strong><span>The Linux Foundation</span></div></div>
@@ -193,12 +239,20 @@
                 </div>
             </div>
 
-            <div class="cert-category"><h3><i class="fas fa-network-wired"></i> Cisco & ITIL</h3>
+            <!-- AXELOS / ITIL -->
+            <div class="cert-category">
+                <h3><i class="fas fa-chart-line"></i> AXELOS & ITIL</h3>
                 <div class="cert-grid">
-                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>CCNA (Archive)</strong><span>Cisco</span></div></div>
-                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>ITIL Foundation (AXELOS)</strong><span>AXELOS</span></div></div>
-                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>DevOps Essentials</strong><span>4Linux</span></div></div>
-                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>Terraform Cloud AWS</strong><span>4Linux</span></div></div>
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>ITIL® Foundation</strong><span>AXELOS Global Best Practice</span></div></div>
+                </div>
+            </div>
+
+            <!-- Cognitive Class -->
+            <div class="cert-category">
+                <h3><i class="fas fa-database"></i> Cognitive Class (IBM)</h3>
+                <div class="cert-grid">
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>Estatística</strong><span>Cognitive Class</span></div></div>
+                    <div class="cert-card"><i class="fas fa-certificate"></i><div><strong>Ciência de Dados com Python</strong><span>Cognitive Class</span></div></div>
                 </div>
             </div>
         </div>
@@ -209,30 +263,30 @@
             <h2 class="section-title">Portfólio de Projetos</h2>
             <p class="section-subtitle">100+ projetos e laboratórios disponíveis</p>
 
-            <!-- AWS LABS - NOVA SEÇÃO ESPECIAL -->
+            <!-- AWS LABS -->
             <div class="portfolio-level-section">
                 <h3 class="level-title aws-labs-level"><i class="fab fa-aws"></i> Laboratórios Práticos AWS (60+ labs)</h3>
                 <div class="portfolio-grid">
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>EC2 - Instâncias</h3><p>Provisionamento, tipos, AMIs, Security Groups, EBS</p><div class="tech-tags"><span>EC2</span><span>EBS</span><span>Security Groups</span></div></div>
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>VPC - Redes</h3><p>VPC, Subnets, Route Tables, Internet Gateway, NAT</p><div class="tech-tags"><span>VPC</span><span>Subnets</span><span>NAT</span></div></div>
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>S3 - Storage</h3><p>Buckets, versionamento, replicação, lifecycle, políticas</p><div class="tech-tags"><span>S3</span><span>Versionamento</span><span>Replicação</span></div></div>
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>Lambda - Serverless</h3><p>Funções, triggers, integração com S3, DynamoDB, API Gateway</p><div class="tech-tags"><span>Lambda</span><span>Serverless</span><span>API Gateway</span></div></div>
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>RDS / Aurora</h3><p>Bancos MySQL, PostgreSQL, backups, Multi-AZ, read replicas</p><div class="tech-tags"><span>RDS</span><span>Aurora</span><span>Multi-AZ</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>EC2 - Instâncias</h3><p>Provisionamento, tipos, AMIs, Security Groups, EBS</p><div class="tech-tags"><span>EC2</span><span>EBS</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>VPC - Redes</h3><p>VPC, Subnets, Route Tables, Internet Gateway, NAT</p><div class="tech-tags"><span>VPC</span><span>Subnets</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>S3 - Storage</h3><p>Buckets, versionamento, replicação, lifecycle</p><div class="tech-tags"><span>S3</span><span>Versionamento</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>Lambda - Serverless</h3><p>Funções, triggers, API Gateway, DynamoDB</p><div class="tech-tags"><span>Lambda</span><span>Serverless</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>RDS / Aurora</h3><p>Bancos MySQL, PostgreSQL, Multi-AZ, read replicas</p><div class="tech-tags"><span>RDS</span><span>Aurora</span></div></div>
                     <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>CloudFormation</h3><p>Infraestrutura como código, templates, stacks</p><div class="tech-tags"><span>CloudFormation</span><span>IaC</span></div></div>
                     <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>Terraform</h3><p>Provisionamento de recursos AWS com Terraform</p><div class="tech-tags"><span>Terraform</span><span>IaC</span></div></div>
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>ECS / ECR</h3><p>Containers, clusters, tasks, registries, Docker</p><div class="tech-tags"><span>ECS</span><span>ECR</span><span>Docker</span></div></div>
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>Load Balancer (ALB/ELB)</h3><p>Application Load Balancer, target groups, listeners</p><div class="tech-tags"><span>ALB</span><span>ELB</span><span>Target Groups</span></div></div>
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>Auto Scaling</h3><p>Launch templates, scaling policies, health checks</p><div class="tech-tags"><span>Auto Scaling</span><span>Launch Templates</span></div></div>
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>CloudFront - CDN</h3><p>Distribuições, origins, behaviors, invalidação</p><div class="tech-tags"><span>CloudFront</span><span>CDN</span></div></div>
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>CloudWatch</h3><p>Métricas, logs, alarms, dashboards, eventos</p><div class="tech-tags"><span>CloudWatch</span><span>Monitoring</span></div></div>
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>IAM</h3><p>Users, groups, roles, policies, MFA, access keys</p><div class="tech-tags"><span>IAM</span><span>Security</span><span>Policies</span></div></div>
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>SNS / SQS</h3><p>Mensageria, tópicos, filas, assinaturas, DLQ</p><div class="tech-tags"><span>SNS</span><span>SQS</span><span>Messaging</span></div></div>
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>KMS - Criptografia</h3><p>Chaves de criptografia, envelopes, gerenciamento</p><div class="tech-tags"><span>KMS</span><span>Encryption</span></div></div>
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>Systems Manager</h3><p>Session Manager, Patch Manager, Automation</p><div class="tech-tags"><span>SSM</span><span>Session Manager</span></div></div>
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>CloudTrail</h3><p>Auditoria, logs de API, governance, compliance</p><div class="tech-tags"><span>CloudTrail</span><span>Audit</span></div></div>
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>DynamoDB</h3><p>NoSQL, tables, indexes, PartiQL, capacity</p><div class="tech-tags"><span>DynamoDB</span><span>NoSQL</span></div></div>
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>Global Accelerator</h3><p>Anycast IPs, traffic management, failover</p><div class="tech-tags"><span>Global Accelerator</span></div></div>
-                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>Secrets Manager</h3><p>Gerenciamento de segredos, rotatividade de senhas</p><div class="tech-tags"><span>Secrets Manager</span><span>Security</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>ECS / ECR</h3><p>Containers, clusters, tasks, Docker</p><div class="tech-tags"><span>ECS</span><span>Docker</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>Load Balancer</h3><p>ALB/ELB, target groups, listeners</p><div class="tech-tags"><span>ALB</span><span>ELB</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>Auto Scaling</h3><p>Launch templates, scaling policies, health checks</p><div class="tech-tags"><span>Auto Scaling</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>CloudFront - CDN</h3><p>Distribuições, origins, behaviors</p><div class="tech-tags"><span>CloudFront</span><span>CDN</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>CloudWatch</h3><p>Métricas, logs, alarms, dashboards</p><div class="tech-tags"><span>CloudWatch</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>IAM</h3><p>Users, groups, roles, policies, MFA</p><div class="tech-tags"><span>IAM</span><span>Security</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>SNS / SQS</h3><p>Mensageria, tópicos, filas, DLQ</p><div class="tech-tags"><span>SNS</span><span>SQS</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>KMS - Criptografia</h3><p>Chaves de criptografia, envelopes</p><div class="tech-tags"><span>KMS</span><span>Encryption</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>Systems Manager</h3><p>Session Manager, Patch Manager</p><div class="tech-tags"><span>SSM</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>CloudTrail</h3><p>Auditoria, logs de API, governance</p><div class="tech-tags"><span>CloudTrail</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>DynamoDB</h3><p>NoSQL, tables, indexes, PartiQL</p><div class="tech-tags"><span>DynamoDB</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>Global Accelerator</h3><p>Anycast IPs, traffic management</p><div class="tech-tags"><span>Global Accelerator</span></div></div>
+                    <div class="portfolio-card"><span class="badge aws">AWS Lab</span><h3>Secrets Manager</h3><p>Gerenciamento de segredos</p><div class="tech-tags"><span>Secrets Manager</span></div></div>
                 </div>
             </div>
 
@@ -242,14 +296,14 @@
                 <div class="portfolio-grid">
                     <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Server Performance Stats</h3><p>Script para analisar performance do servidor</p><div class="tech-tags"><span>CLI</span><span>Bash</span></div></div>
                     <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Log Archive Tool</h3><p>Ferramenta para arquivar logs</p><div class="tech-tags"><span>CLI</span><span>Bash</span></div></div>
-                    <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Nginx Log Analyser</h3><p>Analisador de logs do Nginx</p><div class="tech-tags"><span>Nginx</span><span>Logs</span></div></div>
-                    <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>GitHub Pages Deployment</h3><p>Workflow GitHub Actions para deploy</p><div class="tech-tags"><span>CI/CD</span><span>GitHub</span></div></div>
-                    <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>SSH Remote Server Setup</h3><p>Configuração de servidor com SSH</p><div class="tech-tags"><span>SSH</span><span>Linux</span></div></div>
-                    <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Static Site Server</h3><p>Servidor Nginx para site estático</p><div class="tech-tags"><span>Nginx</span><span>Linux</span></div></div>
-                    <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Basic DNS Setup</h3><p>Configuração de registros DNS</p><div class="tech-tags"><span>DNS</span><span>Domain</span></div></div>
-                    <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Simple Monitoring</h3><p>Dashboard com Netdata</p><div class="tech-tags"><span>Monitoring</span><span>Netdata</span></div></div>
+                    <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Nginx Log Analyser</h3><p>Analisador de logs do Nginx</p><div class="tech-tags"><span>Nginx</span></div></div>
+                    <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>GitHub Pages Deployment</h3><p>Workflow GitHub Actions</p><div class="tech-tags"><span>CI/CD</span></div></div>
+                    <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>SSH Remote Server Setup</h3><p>Configuração de servidor com SSH</p><div class="tech-tags"><span>SSH</span></div></div>
+                    <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Static Site Server</h3><p>Servidor Nginx para site estático</p><div class="tech-tags"><span>Nginx</span></div></div>
+                    <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Basic DNS Setup</h3><p>Configuração de registros DNS</p><div class="tech-tags"><span>DNS</span></div></div>
+                    <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Simple Monitoring</h3><p>Dashboard com Netdata</p><div class="tech-tags"><span>Monitoring</span></div></div>
                     <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Basic Dockerfile</h3><p>Build de imagem Docker</p><div class="tech-tags"><span>Docker</span></div></div>
-                    <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>EC2 Instance</h3><p>Instância EC2 na AWS</p><div class="tech-tags"><span>AWS</span><span>EC2</span></div></div>
+                    <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>EC2 Instance</h3><p>Instância EC2 na AWS</p><div class="tech-tags"><span>AWS</span></div></div>
                 </div>
             </div>
 
@@ -257,16 +311,16 @@
             <div class="portfolio-level-section">
                 <h3 class="level-title intermediate-level"><i class="fas fa-chart-line"></i> Projetos Intermediários (10 projetos)</h3>
                 <div class="portfolio-grid">
-                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Multi-Container App</h3><p>Docker Compose + Node.js + MongoDB</p><div class="tech-tags"><span>Docker</span><span>Node.js</span></div></div>
-                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Node.js Service Deployment</h3><p>Deploy com GitHub Actions</p><div class="tech-tags"><span>GitHub Actions</span><span>Node.js</span></div></div>
-                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Configuration Management</h3><p>Playbook Ansible</p><div class="tech-tags"><span>Ansible</span><span>IaC</span></div></div>
-                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Terraform IaC</h3><p>Infraestrutura como código</p><div class="tech-tags"><span>Terraform</span><span>IaC</span></div></div>
+                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Multi-Container App</h3><p>Docker Compose + Node.js + MongoDB</p><div class="tech-tags"><span>Docker</span></div></div>
+                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Node.js Service Deployment</h3><p>Deploy com GitHub Actions</p><div class="tech-tags"><span>GitHub Actions</span></div></div>
+                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Configuration Management</h3><p>Playbook Ansible</p><div class="tech-tags"><span>Ansible</span></div></div>
+                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Terraform IaC</h3><p>Infraestrutura como código</p><div class="tech-tags"><span>Terraform</span></div></div>
                     <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Dockerized Service CI/CD</h3><p>Pipeline para aplicação Dockerizada</p><div class="tech-tags"><span>Docker</span><span>CI/CD</span></div></div>
-                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Automated DB Backups</h3><p>Backup de banco agendado</p><div class="tech-tags"><span>Backup</span><span>Database</span></div></div>
-                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Bastion Host</h3><p>Acesso seguro a infra privada</p><div class="tech-tags"><span>AWS</span><span>Security</span></div></div>
-                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>File Integrity Checker</h3><p>Verificação de integridade de logs</p><div class="tech-tags"><span>Security</span><span>Monitoring</span></div></div>
-                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Linux Server Hardening</h3><p>Configuração segura de servidor</p><div class="tech-tags"><span>Linux</span><span>Security</span></div></div>
-                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>VPN Server Setup</h3><p>Servidor WireGuard/OpenVPN</p><div class="tech-tags"><span>VPN</span><span>Security</span></div></div>
+                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Automated DB Backups</h3><p>Backup de banco agendado</p><div class="tech-tags"><span>Backup</span></div></div>
+                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Bastion Host</h3><p>Acesso seguro a infra privada</p><div class="tech-tags"><span>AWS</span></div></div>
+                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>File Integrity Checker</h3><p>Verificação de integridade de logs</p><div class="tech-tags"><span>Security</span></div></div>
+                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Linux Server Hardening</h3><p>Configuração segura de servidor</p><div class="tech-tags"><span>Linux</span></div></div>
+                    <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>VPN Server Setup</h3><p>Servidor WireGuard/OpenVPN</p><div class="tech-tags"><span>VPN</span></div></div>
                 </div>
             </div>
 
@@ -274,17 +328,17 @@
             <div class="portfolio-level-section">
                 <h3 class="level-title advanced-level"><i class="fas fa-crown"></i> Projetos Avançados (4 projetos)</h3>
                 <div class="portfolio-grid">
-                    <div class="portfolio-card"><span class="badge advanced">Avançado</span><h3>Blue-Green Deployment</h3><p>Deploy sem downtime</p><div class="tech-tags"><span>DevOps</span><span>Kubernetes</span></div></div>
+                    <div class="portfolio-card"><span class="badge advanced">Avançado</span><h3>Blue-Green Deployment</h3><p>Deploy sem downtime</p><div class="tech-tags"><span>DevOps</span></div></div>
                     <div class="portfolio-card"><span class="badge advanced">Avançado</span><h3>Prometheus + Grafana</h3><p>Monitoramento completo</p><div class="tech-tags"><span>Prometheus</span><span>Grafana</span></div></div>
-                    <div class="portfolio-card"><span class="badge advanced">Avançado</span><h3>Multi-Service App</h3><p>Arquitetura multi-serviço</p><div class="tech-tags"><span>Docker</span><span>Microservices</span></div></div>
-                    <div class="portfolio-card"><span class="badge advanced">Avançado</span><h3>Service Discovery</h3><p>Descoberta de serviços com Consul</p><div class="tech-tags"><span>Consul</span><span>Microservices</span></div></div>
+                    <div class="portfolio-card"><span class="badge advanced">Avançado</span><h3>Multi-Service App</h3><p>Arquitetura multi-serviço</p><div class="tech-tags"><span>Microservices</span></div></div>
+                    <div class="portfolio-card"><span class="badge advanced">Avançado</span><h3>Service Discovery</h3><p>Descoberta de serviços com Consul</p><div class="tech-tags"><span>Consul</span></div></div>
                 </div>
             </div>
 
             <div class="portfolio-footer">
                 <p><i class="fas fa-rocket"></i> <strong>Total: 60+ Laboratórios AWS + 24 Projetos Técnicos = 84+ entregáveis</strong></p>
                 <p><i class="fas fa-clock"></i> Inclui documentação completa, código fonte, diagramas e suporte técnico</p>
-                <p><i class="fas fa-certificate"></i> Todos os laboratórios seguem as melhores práticas da AWS Well-Architected Framework</p>
+                <p><i class="fas fa-certificate"></i> Certificações CloudFaster, 4Linux, AWS, CompTIA, Linux Foundation, Cisco, ITIL</p>
             </div>
         </div>
     </section>
@@ -295,7 +349,7 @@
                 <div class="contact-info">
                     <h2>VAMOS CONVERSAR</h2>
                     <h3>Solicite sua proposta</h3>
-                    <p>Com mais de 100 certificações, 60+ laboratórios AWS e 10 anos de experiência, estou pronto para ajudar sua empresa.</p>
+                    <p>Com mais de 100 certificações (CloudFaster, 4Linux, AWS, CompTIA, Linux Foundation), 60+ laboratórios AWS e 10 anos de experiência, estou pronto para ajudar sua empresa.</p>
                     <button class="btn-whatsapp" onclick="window.open('https://wa.me/5511920816426', '_blank')"><i class="fab fa-whatsapp"></i> Falar no WhatsApp</button>
                     <div class="contact-details">
                         <div class="detail-item"><i class="fas fa-map-marker-alt"></i><span>São Paulo, SP — Cotia</span></div>
@@ -332,11 +386,11 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section"><div class="footer-logo">GA<span class="gradient">Tech</span></div><p>Infraestrutura que sustenta.<br>Arquitetura que escala.</p></div>
-                <div class="footer-section"><h4>CERTIFICAÇÕES</h4><ul><li>AWS Certified Practitioner</li><li>CompTIA Network+ / Security+</li><li>ITIL Foundation</li><li>Linux Foundation</li><li>Cisco CCNA</li></ul></div>
+                <div class="footer-section"><h4>FORMAÇÕES</h4><ul><li>CloudFaster Academy</li><li>4Linux</li><li>AWS</li><li>CompTIA</li><li>Linux Foundation</li><li>Cisco</li><li>ITIL® Foundation</li></ul></div>
                 <div class="footer-section"><h4>LABORATÓRIOS AWS</h4><ul><li>60+ laboratórios práticos</li><li>EC2, VPC, S3, Lambda</li><li>RDS, CloudFormation</li><li>ECS, Terraform, IAM</li><li>CloudFront, CloudWatch</li></ul></div>
                 <div class="footer-section"><h4>CONTATO</h4><ul><li>São Paulo, SP</li><li>(11) 9 2081-6426</li><li>geraldodevops@gmail.com</li></ul></div>
             </div>
-            <div class="footer-bottom"><p>© 2025 Geraldo Alves - Arquiteto de Soluções em TI | 100+ Certificações | 60+ Labs AWS | 10+ Anos</p></div>
+            <div class="footer-bottom"><p>© 2025 Geraldo Alves - Arquiteto de Soluções em TI | CloudFaster | 4Linux | AWS | CompTIA | 100+ Certificações</p></div>
         </div>
     </footer>
 
@@ -363,6 +417,7 @@
             msg += `🎯 *Serviço:* ${servico}%0A`;
             msg += `📝 *Mensagem:*%0A${mensagem}%0A%0A`;
             msg += `---%0A`;
+            msg += `*Certificações: CloudFaster | 4Linux | AWS | CompTIA | Linux Foundation | Cisco | ITIL*%0A`;
             msg += `*100+ Certificações | 60+ Labs AWS | 10+ Anos de Experiência*`;
             
             window.open(`https://wa.me/5511920816426?text=${msg}`, '_blank');

@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geraldo Alves | Arquiteto de Soluções TI - 100+ Certificações</title>
-    <meta name="description" content="Portfólio profissional de Geraldo Alves - Arquiteto de Soluções TI com mais de 100 certificações em AWS, CompTIA, Linux Foundation, Cisco, ITIL e muito mais.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .whatsapp-float span { display: none; }
+        .whatsapp-float { width: 60px; height: 60px; position: fixed; bottom: 30px; right: 30px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; z-index: 1000; }
+        .portfolio-level-section { margin-bottom: 3rem; }
+        .level-title { font-size: 1.5rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem; }
+        .beginner-level { color: #10b981; }
+        .intermediate-level { color: #f59e0b; }
+        .advanced-level { color: #ef4444; }
+        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; }
+        .portfolio-card { background: rgba(255,255,255,0.05); border-radius: 16px; padding: 1.5rem; transition: all 0.3s; }
+        .portfolio-card:hover { transform: translateY(-5px); background: rgba(102,126,234,0.15); }
+        .badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.7rem; margin-bottom: 1rem; }
+        .badge.beginner { background: #10b981; color: white; }
+        .badge.intermediate { background: #f59e0b; color: white; }
+        .badge.advanced { background: #ef4444; color: white; }
+        .tech-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+        .tech-tags span { background: rgba(102,126,234,0.2); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; }
+        .project-stats { margin-top: 1rem; font-size: 0.8rem; color: #667eea; }
+        .portfolio-footer { text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(255,255,255,0.03); border-radius: 16px; }
+        @media (max-width: 768px) { .portfolio-grid { grid-template-columns: 1fr; } }
+    </style>
 </head>
 <body>
-    <a href="https://wa.me/5511920816426" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <a href="https://wa.me/5511920816426" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
     <header class="header">
         <nav class="nav-container">
@@ -21,12 +39,10 @@
                 <li><a href="#home">Início</a></li>
                 <li><a href="#services">Serviços</a></li>
                 <li><a href="#certifications">Certificações</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
-            <button class="btn-whatsapp-mobile" onclick="window.open('https://wa.me/5511920816426', '_blank')">
-                <i class="fab fa-whatsapp"></i>
-            </button>
+            <button class="btn-whatsapp-mobile" onclick="window.open('https://wa.me/5511920816426', '_blank')"><i class="fab fa-whatsapp"></i></button>
         </nav>
     </header>
 
@@ -34,17 +50,140 @@
         <section id="home" class="hero">
             <div class="hero-content">
                 <h1>Geraldo Alves</h1>
-                <h2 class="h3 mb-4" style="color: #667eea;">Arquiteto de Soluções em TI</h2>
-                <p class="hero-description">+10 anos de experiência em Gestão de TI, Cloud Computing, Suporte Técnico, Montagem de PC Gamer e Desenvolvimento de soluções com Docker, Kubernetes e CI/CD.</p>
+                <h2 style="color:#667eea; font-size:1.8rem;">Arquiteto de Soluções em TI</h2>
+                <p class="hero-description">+10 anos de experiência em Gestão de TI, Cloud Computing, Suporte Técnico, Montagem de PC Gamer e Desenvolvimento de soluções.</p>
                 <div class="hero-stats">
-                    <div class="stat-item"><div class="stat-value">150+</div><div class="stat-label">Projetos entregues</div></div>
-                    <div class="stat-item"><div class="stat-value">99.9%</div><div class="stat-label">Uptime garantido</div></div>
+                    <div class="stat-item"><div class="stat-value">150+</div><div class="stat-label">Projetos</div></div>
+                    <div class="stat-item"><div class="stat-value">99.9%</div><div class="stat-label">Uptime</div></div>
                     <div class="stat-item"><div class="stat-value">100+</div><div class="stat-label">Certificações</div></div>
-                    <div class="stat-item"><div class="stat-value">100+</div><div class="stat-label">Clientes ativos</div></div>
                 </div>
                 <div class="hero-buttons">
                     <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Solicitar Proposta</button>
-                    <button class="btn-secondary" onclick="document.getElementById('certifications').scrollIntoView({ behavior: 'smooth' })">Ver Certificações <i class="fas fa-arrow-right"></i></button>
+                    <button class="btn-secondary" onclick="document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' })">Ver Projetos <i class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
         </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Serviços Especializados</h2>
+                <div class="services-grid">
+                    <div class="service-card"><i class="fas fa-cloud-upload-alt service-icon"></i><h3>Arquitetura Cloud</h3><p>AWS, Azure, migração, otimização de custos.</p></div>
+                    <div class="service-card"><i class="fas fa-gamepad service-icon"></i><h3>PC Gamer</h3><p>Montagem e manutenção de PCs gamers.</p></div>
+                    <div class="service-card"><i class="fas fa-building service-icon"></i><h3>Gestão de TI</h3><p>ITIL, COBIT, BPMN 2.0, governança.</p></div>
+                    <div class="service-card"><i class="fas fa-headset service-icon"></i><h3>Suporte Técnico</h3><p>Suporte remoto/presencial 24/7.</p></div>
+                    <div class="service-card"><i class="fas fa-chalkboard-user service-icon"></i><h3>Treinamentos TI</h3><p>Docker, Kubernetes, DevOps, AWS.</p></div>
+                    <div class="service-card"><i class="fas fa-microchip service-icon"></i><h3>DevOps & Containers</h3><p>CI/CD, GitHub Actions, microsserviços.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE PROJETOS COMPLETA -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">Portfólio de Projetos Técnicos</h2>
+                <p class="section-subtitle">40+ projetos que posso desenvolver - organizados por nível de complexidade</p>
+
+                <!-- BEGINNER PROJECTS -->
+                <div class="portfolio-level-section">
+                    <h3 class="level-title beginner-level"><i class="fas fa-seedling"></i> Iniciante (11 projetos)</h3>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Server Performance Stats</h3><p>Script para analisar estatísticas de performance do servidor.</p><div class="tech-tags"><span>CLI</span><span>Bash</span><span>Linux</span></div></div>
+                        <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Log Archive Tool</h3><p>Ferramenta para arquivar logs com data e hora.</p><div class="tech-tags"><span>CLI</span><span>Bash</span><span>Logs</span></div></div>
+                        <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Nginx Log Analyser</h3><p>Ferramenta para analisar logs do Nginx.</p><div class="tech-tags"><span>CLI</span><span>Nginx</span><span>Logs</span></div></div>
+                        <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>GitHub Pages Deployment</h3><p>Workflow GitHub Actions para deploy estático.</p><div class="tech-tags"><span>CI/CD</span><span>GitHub</span><span>Pages</span></div></div>
+                        <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>SSH Remote Server Setup</h3><p>Configuração de servidor Linux com acesso SSH.</p><div class="tech-tags"><span>SSH</span><span>Linux</span><span>Security</span></div></div>
+                        <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Static Site Server</h3><p>Servidor Linux para site estático com Nginx.</p><div class="tech-tags"><span>Nginx</span><span>Linux</span><span>Web</span></div></div>
+                        <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Basic DNS Setup</h3><p>Compra de domínio e configuração DNS.</p><div class="tech-tags"><span>DNS</span><span>Domain</span><span>Networking</span></div></div>
+                        <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Simple Monitoring</h3><p>Dashboard de monitoramento com Netdata.</p><div class="tech-tags"><span>Monitoring</span><span>Netdata</span></div></div>
+                        <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Dummy Systemd Service</h3><p>Serviço systemd que faz log em arquivo.</p><div class="tech-tags"><span>Systemd</span><span>Linux</span></div></div>
+                        <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>Basic Dockerfile</h3><p>Build de imagem Docker otimizada.</p><div class="tech-tags"><span>Docker</span><span>Container</span></div></div>
+                        <div class="portfolio-card"><span class="badge beginner">Iniciante</span><h3>EC2 Instance</h3><p>Criação de instância EC2 na AWS.</p><div class="tech-tags"><span>AWS</span><span>EC2</span><span>Cloud</span></div></div>
+                    </div>
+                </div>
+
+                <!-- INTERMEDIATE PROJECTS -->
+                <div class="portfolio-level-section">
+                    <h3 class="level-title intermediate-level"><i class="fas fa-chart-line"></i> Intermediário (11 projetos)</h3>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Pomodoro Timer</h3><p>Aplicação Pomodoro para produtividade.</p><div class="tech-tags"><span>JavaScript</span><span>Frontend</span></div></div>
+                        <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Configuration Management</h3><p>Playbook Ansible para configurar servidor.</p><div class="tech-tags"><span>Ansible</span><span>IaC</span></div></div>
+                        <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>IaC on DigitalOcean</h3><p>Terraform para criar Droplet.</p><div class="tech-tags"><span>Terraform</span><span>DigitalOcean</span></div></div>
+                        <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Node.js Service Deployment</h3><p>Deploy Node.js com GitHub Actions.</p><div class="tech-tags"><span>GitHub Actions</span><span>Node.js</span></div></div>
+                        <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Dockerized Service</h3><p>Pipeline CI/CD para aplicação Dockerizada.</p><div class="tech-tags"><span>Docker</span><span>CI/CD</span></div></div>
+                        <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Multi-Container Application</h3><p>Docker Compose + Node.js + MongoDB.</p><div class="tech-tags"><span>Docker</span><span>Node.js</span><span>MongoDB</span></div></div>
+                        <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Automated DB Backups</h3><p>Backup de banco a cada 12 horas.</p><div class="tech-tags"><span>Backup</span><span>Database</span></div></div>
+                        <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Bastion Host</h3><p>Acesso a infraestrutura privada.</p><div class="tech-tags"><span>Networking</span><span>AWS</span></div></div>
+                        <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>File Integrity Checker</h3><p>Verificação de integridade de logs.</p><div class="tech-tags"><span>Security</span><span>Monitoring</span></div></div>
+                        <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>Linux Server Setup</h3><p>Configuração e hardening de servidor Linux.</p><div class="tech-tags"><span>Linux</span><span>Security</span></div></div>
+                        <div class="portfolio-card"><span class="badge intermediate">Intermediário</span><h3>VPN Server Setup</h3><p>Servidor WireGuard/OpenVPN.</p><div class="tech-tags"><span>VPN</span><span>WireGuard</span></div></div>
+                    </div>
+                </div>
+
+                <!-- ADVANCED PROJECTS -->
+                <div class="portfolio-level-section">
+                    <h3 class="level-title advanced-level"><i class="fas fa-crown"></i> Avançado (4 projetos)</h3>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-card"><span class="badge advanced">Avançado</span><h3>Blue-Green Deployment</h3><p>Estratégia de deploy sem downtime.</p><div class="tech-tags"><span>DevOps</span><span>Kubernetes</span></div></div>
+                        <div class="portfolio-card"><span class="badge advanced">Avançado</span><h3>Prometheus and Grafana</h3><p>Monitoramento com Prometheus e Grafana.</p><div class="tech-tags"><span>Prometheus</span><span>Grafana</span></div></div>
+                        <div class="portfolio-card"><span class="badge advanced">Avançado</span><h3>Multi-Service Application</h3><p>Aplicação multi-serviço otimizada.</p><div class="tech-tags"><span>Docker</span><span>Microservices</span></div></div>
+                        <div class="portfolio-card"><span class="badge advanced">Avançado</span><h3>Service Discovery</h3><p>Service discovery com Consul.</p><div class="tech-tags"><span>Consul</span><span>Microservices</span></div></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-footer">
+                    <p><i class="fas fa-rocket"></i> Total: 26 projetos disponíveis para desenvolvimento sob demanda</p>
+                    <p><i class="fas fa-clock"></i> Inclui documentação completa, código fonte e suporte</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2>SOLICITE SUA PROPOSTA</h2>
+                        <h3>Vamos construir algo incrível juntos</h3>
+                        <button class="btn-whatsapp" onclick="window.open('https://wa.me/5511920816426', '_blank')"><i class="fab fa-whatsapp"></i> Falar no WhatsApp</button>
+                        <div class="contact-details">
+                            <div class="detail-item"><i class="fas fa-map-marker-alt"></i>São Paulo, SP — Cotia</div>
+                            <div class="detail-item"><i class="fas fa-phone"></i>(11) 9 2081-6426</div>
+                            <div class="detail-item"><i class="fas fa-envelope"></i>geraldodevops@gmail.com</div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <h3>Solicitar Proposta Gratuita</h3>
+                        <input type="text" id="nome" placeholder="Nome completo" required>
+                        <input type="email" id="email" placeholder="E-mail" required>
+                        <select id="servico">
+                            <option>Arquitetura Cloud</option><option>PC Gamer</option><option>Gestão de TI</option><option>Treinamentos</option>
+                        </select>
+                        <textarea id="mensagem" rows="4" placeholder="Descreva sua necessidade" required></textarea>
+                        <button type="submit" class="btn-submit">Enviar pelo WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section"><div class="footer-logo">GA<span class="gradient">Tech</span></div><p>Infraestrutura que sustenta. Arquitetura que escala.</p></div>
+                <div class="footer-section"><h4>CERTIFICAÇÕES</h4><ul><li>AWS Cloud Practitioner</li><li>CompTIA Network+</li><li>ITIL Foundation</li><li>Linux Foundation</li></ul></div>
+                <div class="footer-section"><h4>CONTATO</h4><ul><li>São Paulo, SP</li><li>(11) 9 2081-6426</li><li>geraldodevops@gmail.com</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>© 2025 Geraldo Alves - Arquiteto de Soluções em TI | 100+ Certificações</p></div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let msg = `*NOVA SOLICITAÇÃO*%0A👤 Nome: ${document.getElementById('nome').value}%0A📧 Email: ${document.getElementById('email').value}%0A🎯 Serviço: ${document.getElementById('servico').value}%0A📝 Mensagem: ${document.getElementById('mensagem').value}`;
+            window.open(`https://wa.me/5511920816426?text=${msg}`, '_blank');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
